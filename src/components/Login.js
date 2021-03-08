@@ -8,9 +8,11 @@ function Login(props) {
         auth.signInWithPopup(provider)
             .then((result)=>{
                 const newUser = {
-                    name: result.displayName,
+                    name: result.user.displayName,
                     photo: result.user.photoURL,
                 }
+                //console.log(result.user)
+                localStorage.setItem('user',JSON.stringify(newUser));
                 props.setUser(newUser);
             })
             .catch((error) => {
