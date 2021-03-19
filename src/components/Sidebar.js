@@ -4,7 +4,7 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { sidebarItems } from '../data/SideBarData';
 import AddIcon from '@material-ui/icons/Add';
 import db from '../firebase';
-import {useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 function Sidebar(props) {
 
